@@ -193,33 +193,51 @@
       <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 overflow-x-auto">
         <div class="mermaid">
 graph TD
-    classDef main fill:#0284c7,stroke:#0369a1,stroke-width:2px,color:#fff;
-    classDef core fill:#0f766e,stroke:#115e59,stroke-width:2px,color:#fff;
-    classDef sub fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,color:#1e293b;
-    classDef lead fill:#ea580c,stroke:#c2410c,stroke-width:2px,color:#fff;
+    classDef root fill:#031738,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    classDef hub fill:#047857,stroke:#10b981,stroke-width:2px,color:#fff;
+    classDef navItem fill:#ffffff,stroke:#0284c7,stroke-width:1.5px,color:#0f172a;
+    classDef lead fill:#ea580c,stroke:#f97316,stroke-width:2px,color:#fff;
+    classDef util fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#475569;
 
-    Home["1.0 Home (/en/)"]:::main
+    Home["1.0 Home (/en/)"]:::root
 
-    Home --> About["2.0 About us (/en/about)"]:::sub
-    Home --> Seafood["3.0 Seafood processing & OEM Hub (/en/seafood)"]:::core
-    Home --> Products["8.0 Products (/en/products)"]:::sub
-    Home --> Businesses["10.0 Our businesses (/en/businesses)"]:::sub
-    Home --> Sustain["11.0 Sustainability (/en/sustainability)"]:::sub
-    Home --> News["12.0 News (/en/news)"]:::sub
-    Home --> RFQ["13.0 Request a quote (/en/request-a-quote)"]:::lead
-    Home --> Contact["14.0 Contact (/en/contact)"]:::sub
-    Home --> Cat["15.0 Catalogue download (/en/catalogue)"]:::lead
-    Home --> Careers["16.0 Careers (/vi/tuyen-dung)"]:::sub
-    Home --> Legal["17.0 Privacy & Thank-you"]:::sub
+    subgraph Header_Nav ["1. MENU ĐIỀU HƯỚNG CHÍNH TRÊN HEADER (Main Navigation)"]
+        About["2.0 About us<br/>/en/about"]:::navItem
+        SeafoodHub["3.0 Seafood processing & OEM (Hub)<br/>/en/seafood"]:::hub
+        Products["8.0 Products (Catalog)<br/>/en/products"]:::navItem
+        Businesses["10.0 Our businesses<br/>/en/businesses"]:::navItem
+        Sustainability["11.0 Sustainability<br/>/en/sustainability"]:::navItem
+        News["12.0 News<br/>/en/news"]:::navItem
+    end
 
-    %% Dropdown Cụm Seafood
-    Seafood --> S1["4.0 Our factories (/en/seafood/factories)"]:::core
-    Seafood --> S2["5.0 Quality & certifications (/en/seafood/quality)"]:::core
-    Seafood --> S3["6.0 Laboratory & QC (/en/seafood/laboratory)"]:::core
-    Seafood --> S4["7.0 OEM / private label (/en/seafood/oem)"]:::core
+    subgraph Seafood_Subpages ["CỤM TRỌNG TÂM: SEAFOOD & OEM (Dropdown 4 Trang Con)"]
+        F1["4.0 Our factories<br/>/en/seafood/factories"]:::hub
+        F2["5.0 Quality & certifications<br/>/en/seafood/quality"]:::hub
+        F3["6.0 Laboratory & QC<br/>/en/seafood/laboratory"]:::hub
+        F4["7.0 OEM / private label<br/>/en/seafood/oem"]:::hub
+    end
 
-    %% Chi tiết Sản phẩm
-    Products --> P_Detail["9.0 Product detail template (/en/products/{slug})"]:::sub
+    subgraph Product_Detail ["CHI TIẾT SẢN PHẨM"]
+        P_Detail["9.0 Product detail template<br/>/en/products/{slug}"]:::navItem
+    end
+
+    subgraph Lead_Generation ["2. PHỄU THU LEAD & CHUYỂN ĐỔI (BowNow MA)"]
+        RFQ["13.0 Request a quote (Header CTA Button)<br/>/en/request-a-quote"]:::lead
+        Cat["15.0 Catalogue download (Gated Lead Form)<br/>/en/catalogue"]:::lead
+    end
+
+    subgraph Footer_Utility ["3. TRANG TIỆN ÍCH & CHÂN TRANG (Footer & Utility)"]
+        Contact["14.0 Contact<br/>/en/contact"]:::util
+        Careers["16.0 Careers (Chỉ bản VN)<br/>/vi/tuyen-dung"]:::util
+        Legal["17.0 Privacy policy & Thank-you<br/>/en/privacy | /en/thank-you"]:::util
+    end
+
+    Home --> Header_Nav
+    Home --> Lead_Generation
+    Home --> Footer_Utility
+
+    SeafoodHub --> Seafood_Subpages
+    Products --> Product_Detail
         </div>
       </div>
 
