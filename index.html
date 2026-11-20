@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kế hoạch Dự án & Sitemap Website B2B | Evertrust Foods (ETF) x Cloud CIRCUS</title>
+  <!-- Tailwind CSS CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Mermaid CDN for flowchart rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+      color: #1e293b;
+      background-color: #f8fafc;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .shadow-xl, .shadow-lg, .shadow-sm, .shadow-md {
+        box-shadow: none !important;
+        border: 1px solid #e2e8f0;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased py-10 px-4 sm:px-6 lg:px-12">
+
+  <!-- Floating Print / Export Button -->
+  <div class="no-print fixed top-6 right-6 z-50 flex items-center space-x-3 bg-white/95 backdrop-blur border border-slate-200 px-4 py-2.5 rounded-full shadow-lg">
+    <button onclick="window.print()" class="flex items-center space-x-2 text-sm font-semibold text-sky-700 hover:text-sky-800 transition">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+      <span>In hoặc Xuất PDF</span>
+    </button>
+  </div>
+
+  <div class="max-w-6xl mx-auto space-y-10">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-slate-950 via-sky-950 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+      <div class="absolute -right-16 -top-16 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="relative z-10 space-y-4">
+        <div class="inline-flex items-center space-x-2 bg-sky-500/20 text-sky-300 text-xs font-semibold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-sky-400/30">
+          <span>Tài liệu Kế hoạch Dự án & Cấu trúc Sitemap Website B2B</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          Evertrust Foods – Yêu Cầu Dự Án & Sitemap Website B2B
+        </h1>
+        <p class="text-sky-200 text-base sm:text-lg font-medium max-w-3xl">
+          Đơn vị thực hiện: <strong class="text-white font-bold">Cloud CIRCUS VN</strong> (Chị Nguyễn Quỳnh Thao, Country Head) · Khách hàng: <strong class="text-white font-bold">Công ty TNHH Thực phẩm Mãi Tín (ETF)</strong>
+        </p>
+        
+        <div class="pt-6 border-t border-slate-700/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm">
+          <div>
+            <span class="text-slate-400 block">Tên miền:</span>
+            <span class="font-semibold text-white">etf-vn.com</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block">Đầu mối khách hàng:</span>
+            <span class="font-semibold text-white">Anh Trác Thuận Đức (Sales)</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block">Nền tảng & Marketing:</span>
+            <span class="font-semibold text-white">WordPress + BowNow MA</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block">Ngôn ngữ & Ngân sách:</span>
+            <span class="font-semibold text-white">EN / JP / VN · ~100M VND</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Visual Showcase: Header & Hero Section Concept -->
+    <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 space-y-5">
+      <div class="flex items-center justify-between flex-wrap gap-4">
+        <h2 class="text-2xl font-bold text-slate-900 flex items-center space-x-3">
+          <span class="w-2.5 h-8 bg-sky-600 rounded-full inline-block"></span>
+          <span>Bản Phác thảo Giao diện Header & Hero Section (Concept)</span>
+        </h2>
+        <span class="text-xs bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full font-semibold">Tông Xanh Navy Chuẩn Nhận Diện</span>
+      </div>
+      <p class="text-slate-600 text-sm">
+        Hình ảnh phác thảo trực quan cho phần đầu trang <strong class="text-slate-800">etf-vn.com</strong>: Thể hiện cá ngừ đại dương Sashimi grade thượng hạng, hệ thống menu điều hướng theo Sitemap chuẩn (Dropdown Seafood, Products, Businesses, Sustainability), chứng nhận quốc tế (EU Code DL243, BRCGS, FDA, HACCP), chuyển đổi ngôn ngữ EN/JP/VN và nút CTA <strong class="text-sky-700 font-bold">[Request a quote]</strong>.
+      </p>
+      <div class="rounded-xl overflow-hidden border border-slate-200 shadow-md">
+        <img src="etf_website_hero_concept.jpg" alt="ETF Website Header & Hero Section Concept" class="w-full h-auto object-cover" />
+      </div>
+    </section>
+
+    <!-- Key Strategic Goals -->
+    <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 space-y-6">
+      <h2 class="text-2xl font-bold text-slate-900 flex items-center space-x-3">
+        <span class="w-2.5 h-8 bg-sky-600 rounded-full inline-block"></span>
+        <span>1. Tổng Quan Dự Án & Định Vị B2B</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:border-sky-300 transition">
+          <div class="w-10 h-10 bg-sky-100 text-sky-700 rounded-lg flex items-center justify-center font-bold mb-4">01</div>
+          <h3 class="font-bold text-slate-800 text-base mb-2">Tìm Buyer B2B Nước Ngoài</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Mục tiêu trọng tâm là tìm kiếm các nhà nhập khẩu (Importers), nhà phân phối thực phẩm (Distributors) và thương hiệu thực phẩm tại Nhật Bản, Hoa Kỳ, Châu Âu thông qua website B2B đa ngôn ngữ.
+          </p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:border-sky-300 transition">
+          <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center font-bold mb-4">02</div>
+          <h3 class="font-bold text-slate-800 text-base mb-2">Trọng tâm: Seafood & OEM Hub</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Chứng minh năng lực sản xuất chuẩn Nhật với nhà máy hiện đại, kho siêu lạnh -45°C, hệ thống kiểm nghiệm Lab độc lập và các chứng chỉ khắt khe (EU Code DL243, BRCGS, FDA, HACCP).
+          </p>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:border-sky-300 transition">
+          <div class="w-10 h-10 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center font-bold mb-4">03</div>
+          <h3 class="font-bold text-slate-800 text-base mb-2">Thu Lead & Tracking Bằng BowNow</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Mọi form (Request a quote, Contact, Catalogue download, Spec sheet download) đều tích hợp hoặc đẩy dữ liệu về nền tảng Marketing Automation BowNow để phân tích hành vi và nuôi dưỡng Lead.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Architecture / Mermaid Diagram -->
+    <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4">
+        <h2 class="text-2xl font-bold text-slate-900 flex items-center space-x-3">
+          <span class="w-2.5 h-8 bg-sky-600 rounded-full inline-block"></span>
+          <span>2. Sơ Đồ Cấu Trúc Cây Thư Mục Sitemap Chuẩn (17 Trang / Templates)</span>
+        </h2>
+        <span class="text-xs bg-sky-50 text-sky-700 border border-sky-200 px-3 py-1 rounded-full font-medium">Cấu trúc URL /en/ /ja/ /vi/</span>
+      </div>
+
+      <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 overflow-x-auto">
+        <div class="mermaid">
+graph TD
+    classDef main fill:#0284c7,stroke:#0369a1,stroke-width:2px,color:#fff;
+    classDef core fill:#0f766e,stroke:#115e59,stroke-width:2px,color:#fff;
+    classDef sub fill:#ffffff,stroke:#cbd5e1,stroke-width:1px,color:#1e293b;
+    classDef lead fill:#ea580c,stroke:#c2410c,stroke-width:2px,color:#fff;
+
+    Home["1.0 Home (/en/)"]:::main
+
+    Home --> About["2.0 About us (/en/about)"]:::sub
+    Home --> Seafood["3.0 Seafood processing & OEM Hub (/en/seafood)"]:::core
+    Home --> Products["8.0 Products (/en/products)"]:::sub
+    Home --> Businesses["10.0 Our businesses (/en/businesses)"]:::sub
+    Home --> Sustain["11.0 Sustainability (/en/sustainability)"]:::sub
+    Home --> News["12.0 News (/en/news)"]:::sub
+    Home --> RFQ["13.0 Request a quote (/en/request-a-quote)"]:::lead
+    Home --> Contact["14.0 Contact (/en/contact)"]:::sub
+    Home --> Cat["15.0 Catalogue download (/en/catalogue)"]:::lead
+    Home --> Careers["16.0 Careers (/vi/tuyen-dung)"]:::sub
+    Home --> Legal["17.0 Privacy & Thank-you"]:::sub
+
+    %% Dropdown Cụm Seafood
+    Seafood --> S1["4.0 Our factories (/en/seafood/factories)"]:::core
+    Seafood --> S2["5.0 Quality & certifications (/en/seafood/quality)"]:::core
+    Seafood --> S3["6.0 Laboratory & QC (/en/seafood/laboratory)"]:::core
+    Seafood --> S4["7.0 OEM / private label (/en/seafood/oem)"]:::core
+
+    %% Chi tiết Sản phẩm
+    Products --> P_Detail["9.0 Product detail template (/en/products/{slug})"]:::sub
+        </div>
+      </div>
+
+      <!-- Infographic Board Graphic -->
+      <div class="mt-6 pt-6 border-t border-slate-200 space-y-3">
+        <h3 class="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center space-x-2">
+          <span>Bản vẽ Trực quan Sơ đồ Cây Thư mục (Infographic Board)</span>
+        </h3>
+        <div class="rounded-xl overflow-hidden border border-slate-200 shadow-md">
+          <img src="etf_sitemap_tree_diagram.jpg" alt="ETF Sitemap Information Architecture Diagram" class="w-full h-auto object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed 17 Pages Table -->
+    <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 space-y-6">
+      <div class="flex items-center justify-between flex-wrap gap-4">
+        <h2 class="text-2xl font-bold text-slate-900 flex items-center space-x-3">
+          <span class="w-2.5 h-8 bg-sky-600 rounded-full inline-block"></span>
+          <span>3. Bảng Đặc Tả Chi Tiết 17 Trang & Chức Năng Cần Có</span>
+        </h2>
+        <span class="text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-medium">Phạm vi 15 templates × 3 ngôn ngữ</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 uppercase font-semibold text-xs border-b border-slate-200">
+              <th class="py-3.5 px-3 w-12 text-center">#</th>
+              <th class="py-3.5 px-4">Tên Trang</th>
+              <th class="py-3.5 px-4 font-mono text-xs">URL (Bản EN)</th>
+              <th class="py-3.5 px-4">Vị trí Menu</th>
+              <th class="py-3.5 px-4">Nội dung & Chức năng Cần Có</th>
+              <th class="py-3.5 px-3 text-center">Ưu tiên</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <!-- 1 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">1</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Home</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/</td>
+              <td class="py-3.5 px-4 text-slate-600">Logo</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Hero (video/ảnh nhà máy) + 2 CTA (Request a quote, Download catalogue); thanh chứng nhận; 3 năng lực cốt lõi (Factories, Lab, OEM); sản phẩm nổi bật; khối số liệu (năm thành lập 2010, công suất, thị trường, nhân sự); Markets we serve (bản đồ); Our businesses; Sustainability; 3 tin mới; form hỏi giá cuối trang.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 2 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">2</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">About us</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/about</td>
+              <td class="py-3.5 px-4 text-slate-600">Header</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Lịch sử thành lập 2010, vốn 100% Nhật Bản, thông điệp CEO Kimura (ảnh chân dung + lời nhắn), khối số liệu năng lực, thị trường xuất khẩu.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 3 -->
+            <tr class="bg-sky-50/60 hover:bg-sky-50">
+              <td class="py-3.5 px-3 font-bold text-center text-sky-700">3</td>
+              <td class="py-3.5 px-4 font-bold text-sky-950">Seafood processing & OEM<br><span class="text-xs font-normal text-sky-700">(Trang Hub)</span></td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-800">/en/seafood</td>
+              <td class="py-3.5 px-4 text-slate-600">Header (Có dropdown & menu phụ cố định)</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Giới thiệu năng lực, thẻ liên kết 4 trang con, quy trình OEM tóm tắt, CTA. <em>Menu phụ (sub-nav) cố định trên mọi trang cụm Seafood.</em>
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 4 -->
+            <tr class="bg-sky-50/30 hover:bg-sky-50">
+              <td class="py-3.5 px-3 font-bold text-center text-sky-700">4</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Our factories</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/seafood/factories</td>
+              <td class="py-3.5 px-4 text-slate-600">Dropdown Seafood</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Theo từng nhà máy: diện tích, công suất/ngày, cấp đông IQF (-30°C dài 20m), kho lạnh (-45°C), nhân sự, mã xuất khẩu Châu Âu <strong>DL 243</strong>, số FDA Hoa Kỳ; video tour + gallery ảnh thực tế; CTA đặt lịch tham quan nhà máy.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 5 -->
+            <tr class="bg-sky-50/30 hover:bg-sky-50">
+              <td class="py-3.5 px-3 font-bold text-center text-sky-700">5</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Quality & certifications</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/seafood/quality</td>
+              <td class="py-3.5 px-4 text-slate-600">Dropdown Seafood</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Thẻ từng chứng nhận (FDA, BRCGS, HACCP…): số hiệu, đơn vị cấp, hiệu lực, nút xem/tải PDF; truy xuất nguồn gốc và tuân thủ chống khai thác IUU.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 6 -->
+            <tr class="bg-sky-50/30 hover:bg-sky-50">
+              <td class="py-3.5 px-3 font-bold text-center text-sky-700">6</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Laboratory & QC</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/seafood/laboratory</td>
+              <td class="py-3.5 px-4 text-slate-600">Dropdown Seafood</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Giới thiệu phòng Lab nội bộ, danh sách chỉ tiêu kiểm soát (định lượng Histamine, chỉ tiêu vi sinh E.coli, Coliforms, Salmonella, kim loại nặng), thiết bị, quy trình kiểm nghiệm theo từng lô hàng xuất xưởng.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 7 -->
+            <tr class="bg-sky-50/30 hover:bg-sky-50">
+              <td class="py-3.5 px-3 font-bold text-center text-sky-700">7</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">OEM / private label</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/seafood/oem</td>
+              <td class="py-3.5 px-4 text-slate-600">Dropdown Seafood</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Quy trình 5 bước tinh gọn (Spec $\rightarrow$ Sample $\rightarrow$ Production $\rightarrow$ Inspection $\rightarrow$ Shipment), quy cách đóng gói tùy biến theo yêu cầu khách, CTA đăng ký tư vấn gia công.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 8 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">8</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Products (Danh mục)</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/products</td>
+              <td class="py-3.5 px-4 text-slate-600">Header</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Danh mục sản phẩm có bộ lọc thông minh theo phân loại (Tuna, Frozen seafood, OEM).
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 9 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">9</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Product detail (Template)</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/products/{slug}</td>
+              <td class="py-3.5 px-4 text-slate-600">Từ danh mục</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Tên thương mại tiếng Anh + tên khoa học, bảng quy cách cắt, size/grade, đóng gói, phương pháp xử lý, số lượng tối thiểu MOQ, hình ảnh chất lượng cao; 2 nút CTA: <strong>[Tải spec sheet (qua form BowNow)]</strong> và <strong>[Hỏi giá sản phẩm này]</strong>.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 10 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">10</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Our businesses (Hệ sinh thái)</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/businesses</td>
+              <td class="py-3.5 px-4 text-slate-600">Header</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                1 trang tổng hợp 5 mục: <strong>Mãi Tín Bình Định</strong>, <strong>Nông sản xuất khẩu</strong> (sấy thăng hoa, khoai mật, OEM đóng gói), <strong>Pet food</strong>, <strong>Phân phối cá ngừ nội địa</strong>, <strong>Resort & nhà hàng</strong> (link ngoài nếu có).
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-amber-100 text-amber-700 font-bold px-2 py-0.5 rounded text-xs">Trung bình</span></td>
+            </tr>
+
+            <!-- 11 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">11</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Sustainability</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/sustainability</td>
+              <td class="py-3.5 px-4 text-slate-600">Header</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Câu chuyện kinh tế tuần hoàn, không lãng phí tài nguyên (phụ phẩm cá ngừ $\rightarrow$ sản xuất pet food), cam kết nguồn nguyên liệu có trách nhiệm và bảo vệ môi trường biển.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-amber-100 text-amber-700 font-bold px-2 py-0.5 rounded text-xs">Trung bình</span></td>
+            </tr>
+
+            <!-- 12 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">12</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">News (List + Detail)</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/news<br>/en/news/{slug}</td>
+              <td class="py-3.5 px-4 text-slate-600">Header</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Danh sách + chi tiết bài viết, phân loại (Sự kiện/Hội chợ quốc tế, Sản phẩm, Chứng nhận), bài viết liên quan, internal link dẫn về trang sản phẩm liên quan.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-amber-100 text-amber-700 font-bold px-2 py-0.5 rounded text-xs">Trung bình</span></td>
+            </tr>
+
+            <!-- 13 -->
+            <tr class="bg-emerald-50/60 hover:bg-emerald-50">
+              <td class="py-3.5 px-3 font-bold text-center text-emerald-700">13</td>
+              <td class="py-3.5 px-4 font-bold text-emerald-950">Request a quote</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-emerald-800">/en/request-a-quote</td>
+              <td class="py-3.5 px-4 text-slate-600">Nút CTA trên Header</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Form BowNow: họ tên, công ty, email, quốc gia, sản phẩm quan tâm, sản lượng dự kiến, lời nhắn; tự động chuyển sang trang Thank-you.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 14 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">14</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Contact</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/contact</td>
+              <td class="py-3.5 px-4 text-slate-600">Footer / Header</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Thông tin liên hệ, bản đồ vị trí, form BowNow có trường chọn phòng ban (Sales / OEM / Tuyển dụng / Khác).
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-amber-100 text-amber-700 font-bold px-2 py-0.5 rounded text-xs">Trung bình</span></td>
+            </tr>
+
+            <!-- 15 -->
+            <tr class="bg-orange-50/60 hover:bg-orange-50">
+              <td class="py-3.5 px-3 font-bold text-center text-orange-700">15</td>
+              <td class="py-3.5 px-4 font-bold text-orange-950">Catalogue download</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-orange-800">/en/catalogue</td>
+              <td class="py-3.5 px-4 text-slate-600">Footer, các nút CTA</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Form BowNow (email, công ty, quốc gia) $\rightarrow$ Trả về file PDF Catalogue B2B 2026.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded text-xs">Cao</span></td>
+            </tr>
+
+            <!-- 16 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">16</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Careers (Chỉ bản VN)</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/vi/tuyen-dung</td>
+              <td class="py-3.5 px-4 text-slate-600">Footer</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Danh sách vị trí tuyển dụng tại nhà máy và văn phòng, khách tự cập nhật thông qua trang quản trị WordPress.
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded text-xs">Thấp</span></td>
+            </tr>
+
+            <!-- 17 -->
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-3.5 px-3 font-bold text-center text-slate-500">17</td>
+              <td class="py-3.5 px-4 font-bold text-slate-900">Privacy policy, Thank-you</td>
+              <td class="py-3.5 px-4 font-mono text-xs text-sky-700">/en/privacy<br>/en/thank-you</td>
+              <td class="py-3.5 px-4 text-slate-600">Footer / Sau khi submit form</td>
+              <td class="py-3.5 px-4 text-slate-600">
+                Chính sách bảo mật, thanh thông báo cookie dành cho khách hàng Châu Âu; Trang cảm ơn đo lường chuyển đổi (Conversion tracking GA4/BowNow).
+              </td>
+              <td class="py-3.5 px-3 text-center"><span class="bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded text-xs">Thấp</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Technical Architecture & Specifications -->
+    <section class="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 space-y-6">
+      <h2 class="text-2xl font-bold text-slate-900 flex items-center space-x-3">
+        <span class="w-2.5 h-8 bg-sky-600 rounded-full inline-block"></span>
+        <span>4. Giải Pháp Kỹ Thuật Chi Tiết (WordPress + BowNow)</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+        <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+          <h3 class="font-bold text-slate-800 flex items-center space-x-2 text-base">
+            <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+            <span>Nền tảng WordPress & Dữ liệu Sản phẩm</span>
+          </h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            • Xây dựng trên WordPress để khách hàng dễ dàng tự cập nhật sản phẩm, tin tức, tuyển dụng.<br>
+            • Sản phẩm quản lý qua <strong>Custom Post Type + Custom Fields (ACF)</strong> gồm: Tên khoa học, quy cách cắt, size, đóng gói, bảo quản, MOQ. Nhập sẵn tối đa [15] sản phẩm mẫu ban đầu.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+          <h3 class="font-bold text-slate-800 flex items-center space-x-2 text-base">
+            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+            <span>Tích hợp Marketing Automation BowNow</span>
+          </h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            • Nhúng mã theo dõi <strong>Tracking Code BowNow</strong> toàn trang.<br>
+            • Toàn bộ form là form BowNow hoặc đẩy Webhook về BowNow, tự động ghi nhận <strong>trường ẩn (Hidden Fields)</strong>: Ngôn ngữ trang (`/en/`, `/ja/`, `/vi/`) và URL trang nguồn.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+          <h3 class="font-bold text-slate-800 flex items-center space-x-2 text-base">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>Tối ưu Hiệu năng & Điều hướng 301</span>
+          </h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            • Máy chủ tại Việt Nam kèm CDN quốc tế tăng tốc độ tải cho khách hàng Nhật, Mỹ, EU.<br>
+            • Thu thập toàn bộ URL cũ của `etf-vn.com` và cấu hình <strong>Redirect 301</strong> sang URL mới tương ứng để bảo toàn SEO.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-2">
+          <h3 class="font-bold text-slate-800 flex items-center space-x-2 text-base">
+            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+            <span>Chuẩn SEO, AIO & Đa Ngôn Ngữ</span>
+          </h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            • Thẻ `hreflang` 3 ngôn ngữ, Schema Organization/Product, cấu trúc bảng và FAQ rõ ràng để các công cụ tìm kiếm AI (AI Search Engine) trích dẫn chuẩn xác.<br>
+            • Font chữ hỗ trợ hiển thị tối ưu tiếng Nhật (Noto Sans JP).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Contact info -->
+    <footer class="pt-8 border-t border-slate-200 text-center text-xs text-slate-500 space-y-2">
+      <p class="font-medium text-slate-700">Evertrust Foods Co., Ltd – Dự án Xây mới Website B2B (etf-vn.com)</p>
+      <p>Tài liệu phối hợp: Cloud CIRCUS VN (Chị Thao) & Evertrust Foods (Anh Trác Thuận Đức) • Cập nhật 20/11/2026</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
