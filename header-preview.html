@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vị trí menu ETF</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--surface:#fff;--line:#dbe2ea;--ink:#0f1c2e;--ink-2:#44536a;--ink-3:#6b7890;--navy:#12305e;--navy-soft:#e3eaf5;--accent:#c2410c;--accent-soft:#fdeee5;--note:#7c3aed}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Be Vietnam Pro",system-ui,sans-serif}
+.wrap{max-width:1240px;margin:0 auto;padding:32px 16px 56px}
+h1{font-size:26px;margin:0 0 4px}
+.lead{color:var(--ink-2);margin:0 0 28px}
+h2{font-size:19px;margin:40px 0 6px}
+h2 + p{color:var(--ink-2);margin:0 0 14px}
+.frame{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgb(18 48 94 / .08)}
+
+/* Header máy tính */
+.hdr{display:flex;align-items:center;gap:26px;height:72px;padding:0 28px;border-bottom:1px solid var(--line)}
+.logo{font-weight:700;color:var(--navy);font-size:19px;letter-spacing:.01em;white-space:nowrap}
+.menu{display:flex;gap:22px;flex:1;font-weight:500;font-size:14.5px;color:var(--navy);white-space:nowrap}
+.menu span{position:relative;padding:6px 0}
+.menu .open{border-bottom:2px solid var(--navy)}
+.lang{font-size:13.5px;color:var(--ink-2);white-space:nowrap}
+.lang b{color:var(--navy)}
+.cta{background:var(--accent);color:#fff;font-weight:600;font-size:14px;padding:10px 16px;border-radius:6px;white-space:nowrap}
+.cta.ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}
+.stage{position:relative;height:430px;background:linear-gradient(180deg,#2a4a7a,#12305e)}
+.stage .hero-txt{position:absolute;left:40px;bottom:40px;color:#fff;opacity:.35;font-size:34px;font-weight:700;line-height:1.2}
+.dd{position:absolute;top:0;left:208px;width:620px;background:var(--surface);border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;box-shadow:0 18px 40px rgb(12 30 60 / .25);display:grid;grid-template-columns:1fr 1.5fr}
+.dd .ov{background:var(--navy-soft);padding:20px;border-radius:0 0 0 10px}
+.dd .ov b{display:block;color:var(--navy);font-size:15px;margin-bottom:6px}
+.dd .ov p{margin:0 0 14px;font-size:13.5px;color:var(--ink-2)}
+.dd .ov a{color:var(--navy);font-weight:600;font-size:13.5px}
+.dd ul{list-style:none;margin:0;padding:12px}
+.dd li{padding:10px 12px;border-radius:6px}
+.dd li:hover,.dd li.hl{background:#f4f6f9}
+.dd li b{display:block;font-size:14.5px;color:var(--ink)}
+.dd li span{font-size:13px;color:var(--ink-3)}
+.pin{position:absolute;background:var(--note);color:#fff;font-size:12px;font-weight:600;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.pin::before{content:"";position:absolute;width:8px;height:8px;background:var(--note);transform:rotate(45deg)}
+.pin.up::before{top:-4px;right:18px}
+.pin.left::before{left:-4px;top:9px}
+
+/* Điện thoại */
+.phones{display:grid;grid-template-columns:repeat(2,minmax(0,330px));gap:28px}
+.phone{width:330px;border:10px solid #1d2635;border-radius:34px;background:var(--surface);overflow:hidden;height:640px;display:flex;flex-direction:column}
+.p-hdr{display:flex;justify-content:space-between;align-items:center;height:58px;padding:0 16px;border-bottom:1px solid var(--line)}
+.p-hdr .logo{font-size:16px}
+.burger{font-size:13px;font-weight:600;color:var(--navy);border:1px solid var(--line);border-radius:6px;padding:6px 10px}
+.p-body{flex:1;overflow:hidden}
+.p-item{display:flex;justify-content:space-between;align-items:center;min-height:48px;padding:0 18px;border-bottom:1px solid var(--line);font-weight:500;color:var(--navy)}
+.p-item.exp{background:var(--navy-soft)}
+.p-sub{background:#f7f9fc;border-bottom:1px solid var(--line)}
+.p-sub div{min-height:44px;display:flex;align-items:center;padding:0 18px 0 34px;font-size:14px;color:var(--ink-2);border-top:1px solid #eef1f5}
+.p-lang{padding:14px 18px;font-size:14px;color:var(--ink-2)}
+.p-foot{padding:12px 16px;border-top:1px solid var(--line);background:var(--surface)}
+.p-foot .cta{display:block;text-align:center;padding:13px}
+.p-hero{height:100%;background:linear-gradient(180deg,#2a4a7a,#12305e);color:#fff;padding:26px 18px}
+.p-hero b{display:block;font-size:24px;line-height:1.2;margin-bottom:10px}
+.p-hero p{opacity:.85;font-size:14px;margin:0 0 18px}
+.p-hero .cta{display:inline-block;margin:0 8px 8px 0}
+.p-hero .cta.ghost{color:#fff;border-color:#fff}
+.cap{font-size:13.5px;color:var(--ink-2);margin-top:10px;max-width:330px}
+
+/* Footer */
+.ftr{background:#0f2447;color:#d6e0f0;padding:34px 32px 20px}
+.fcols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1fr;gap:24px}
+.fcols h4{margin:0 0 10px;color:#fff;font-size:14px}
+.fcols div > span{display:block;font-size:13.5px;padding:3px 0}
+.fcols .vn{color:#ffd2b8}
+.fbot{display:flex;justify-content:space-between;border-top:1px solid #2b4470;margin-top:26px;padding-top:14px;font-size:13px;color:#9fb1cf}
+.ph{background:#3a2a10;color:#ffd58a;padding:0 4px;border-radius:3px}
+
+/* Bảng vị trí */
+.map{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.box h3{margin:0 0 10px;font-size:15px;color:var(--navy)}
+.box ol{margin:0;padding-left:20px;font-size:14px}
+.box li{padding:3px 0}
+.box li small{color:var(--ink-3)}
+.box.hl{border-color:var(--accent);background:var(--accent-soft)}
+.box.hl h3{color:var(--accent)}
+@media (max-width:900px){.map{grid-template-columns:1fr 1fr}.fcols{grid-template-columns:1fr 1fr}.phones{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Header, menu sổ xuống và vị trí từng trang</h1>
+  <p class="lead">Mô phỏng bố cục để duyệt vị trí, chưa phải thiết kế cuối. Nhãn tím là ghi chú giải thích.</p>
+
+  <h2>1. Header trên máy tính, đang mở menu Seafood &amp; OEM</h2>
+  <p>Rê chuột (hoặc bấm) vào "Seafood &amp; OEM" thì bảng này sổ xuống. Header luôn dính ở đầu trang khi cuộn.</p>
+  <div class="frame">
+    <div class="hdr">
+      <div class="logo">EVERTRUST FOODS</div>
+      <div class="menu">
+        <span>About us</span>
+        <span class="open">Seafood &amp; OEM ▾</span>
+        <span>Products</span>
+        <span>Our businesses</span>
+        <span>Sustainability</span>
+        <span>News</span>
+      </div>
+      <div class="lang"><b>EN</b> | JP | VN</div>
+      <div class="cta">Request a quote</div>
+    </div>
+    <div class="stage">
+      <div class="dd">
+        <div class="ov">
+          <b>Seafood processing &amp; OEM</b>
+          <p>Năng lực chế biến cá ngừ và gia công cho đối tác nhập khẩu.</p>
+          <a>Xem tổng quan →</a>
+        </div>
+        <ul>
+          <li class="hl"><b>Our factories</b><span>Nhà máy, cấp đông, kho lạnh, video tour</span></li>
+          <li><b>Quality &amp; certifications</b><span>FDA, BRCGS, HACCP, tải PDF chứng nhận</span></li>
+          <li><b>Laboratory &amp; QC</b><span>Phòng lab nội bộ, kiểm theo từng lô</span></li>
+          <li><b>OEM / private label</b><span>Quy trình 5 bước, đóng gói theo yêu cầu</span></li>
+        </ul>
+      </div>
+      <div class="pin left" style="left:882px;top:120px">Trang hub (số 3) + 4 trang con (số 4-7)</div>
+      <div class="pin left" style="left:882px;top:160px">Chỉ mục này có menu sổ xuống</div>
+      <div class="pin up" style="right:24px;top:14px">Nút hỏi giá: luôn hiện, mọi trang</div>
+      <div class="pin up" style="right:170px;top:54px">Đổi ngôn ngữ, giữ đúng trang đang xem</div>
+      <div class="hero-txt">Phần hero trang chủ<br>nằm phía sau</div>
+    </div>
+  </div>
+
+  <h2>2. Trên điện thoại</h2>
+  <p>Menu thu vào nút "Menu". Bấm vào Seafood &amp; OEM thì 4 trang con xổ ra ngay bên dưới (kiểu accordion). Nút hỏi giá dính ở đáy màn hình.</p>
+  <div class="phones">
+    <div>
+      <div class="phone">
+        <div class="p-hdr"><div class="logo">EVERTRUST FOODS</div><div class="burger">Menu</div></div>
+        <div class="p-body"><div class="p-hero"><b>Tuna processing &amp; OEM from Vietnam</b><p>Japanese-owned seafood processor since 2010.</p><span class="cta">Request a quote</span><span class="cta ghost">Download catalogue</span></div></div>
+        <div class="p-foot"><div class="cta">Request a quote</div></div>
+      </div>
+      <p class="cap">Lúc đóng menu: chỉ có logo, nút Menu và nút hỏi giá dính đáy.</p>
+    </div>
+    <div>
+      <div class="phone">
+        <div class="p-hdr"><div class="logo">EVERTRUST FOODS</div><div class="burger">Đóng ✕</div></div>
+        <div class="p-body">
+          <div class="p-item">About us</div>
+          <div class="p-item exp">Seafood &amp; OEM <span>−</span></div>
+          <div class="p-sub">
+            <div>Tổng quan</div>
+            <div>Our factories</div>
+            <div>Quality &amp; certifications</div>
+            <div>Laboratory &amp; QC</div>
+            <div>OEM / private label</div>
+          </div>
+          <div class="p-item">Products</div>
+          <div class="p-item">Our businesses</div>
+          <div class="p-item">Sustainability</div>
+          <div class="p-item">News</div>
+          <div class="p-lang"><b>EN</b> | JP | VN</div>
+        </div>
+        <div class="p-foot"><div class="cta">Request a quote</div></div>
+      </div>
+      <p class="cap">Lúc mở menu: Seafood &amp; OEM đang xổ 4 trang con. Mỗi dòng cao tối thiểu 44px, dễ bấm.</p>
+    </div>
+  </div>
+
+  <h2>3. Footer (chân trang)</h2>
+  <p>Có ở cuối mọi trang. Contact, Catalogue, Careers, Privacy chỉ nằm ở đây, không có trên header.</p>
+  <div class="frame">
+    <div class="ftr">
+      <div class="fcols">
+        <div><h4>EVERTRUST FOODS</h4><span>Địa chỉ <span class="ph">[X]</span></span><span>Điện thoại <span class="ph">[X]</span></span><span>Email sales <span class="ph">[X]</span></span></div>
+        <div><h4>Company</h4><span>About us</span><span>Our businesses</span><span>Sustainability</span><span>News</span></div>
+        <div><h4>Seafood &amp; OEM</h4><span>Our factories</span><span>Quality &amp; certifications</span><span>Laboratory &amp; QC</span><span>OEM / private label</span></div>
+        <div><h4>Products</h4><span>Tuna</span><span>Frozen seafood</span><span>OEM</span></div>
+        <div><h4>Liên hệ</h4><span>Contact</span><span>Catalogue download</span><span class="vn">Careers (chỉ bản VN)</span><span>Privacy policy</span></div>
+      </div>
+      <div class="fbot"><span>© Evertrust Foods Co., Ltd</span><span>EN | JP | VN</span></div>
+    </div>
+  </div>
+
+  <h2>4. Mỗi trang nằm ở đâu</h2>
+  <p>Đủ 17 mục trong sitemap. Có những trang không nằm trên menu nào, người xem vào bằng nút hoặc link.</p>
+  <div class="map">
+    <div class="box"><h3>Trên header</h3><ol>
+      <li value="1">Home <small>(bấm logo)</small></li>
+      <li value="2">About us</li>
+      <li value="3">Seafood &amp; OEM</li>
+      <li value="8">Products</li>
+      <li value="10">Our businesses</li>
+      <li value="11">Sustainability</li>
+      <li value="12">News</li>
+      <li value="13">Request a quote <small>(nút cam)</small></li>
+    </ol></div>
+    <div class="box"><h3>Trong menu sổ xuống</h3><ol>
+      <li value="4">Our factories</li>
+      <li value="5">Quality &amp; certifications</li>
+      <li value="6">Laboratory &amp; QC</li>
+      <li value="7">OEM / private label</li>
+    </ol><p style="margin:10px 0 0;font-size:13px;color:var(--ink-3)">Cũng có thanh menu phụ cố định trên 5 trang của cụm Seafood.</p></div>
+    <div class="box"><h3>Chỉ ở footer</h3><ol>
+      <li value="14">Contact</li>
+      <li value="15">Catalogue download</li>
+      <li value="16">Careers <small>(chỉ bản VN)</small></li>
+      <li value="17">Privacy policy</li>
+    </ol></div>
+    <div class="box hl"><h3>Không nằm trên menu</h3><ol>
+      <li value="9">Product detail <small>(bấm 1 sản phẩm trong Products)</small></li>
+      <li value="12">Bài tin chi tiết <small>(bấm 1 bài trong News)</small></li>
+      <li value="17">Thank-you <small>(tự hiện sau khi gửi form)</small></li>
+    </ol><p style="margin:10px 0 0;font-size:13px;color:var(--ink-3)">Catalogue còn được mở từ nút "Download catalogue" ở trang chủ và các nút trong trang.</p></div>
+  </div>
+</div>
+</body>
+</html>

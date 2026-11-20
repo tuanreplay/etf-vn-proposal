@@ -232,6 +232,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .proposal-figure figcaption{margin-top:10px}
 .hero-figure figcaption{color:var(--ink-2)}
 @media (max-width:767px){.sitemap-figure img{display:none}}
+.review-link{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px;padding:16px 20px;text-decoration:none;color:var(--ink);border-left:4px solid var(--accent)}
+.review-link b{display:block;font-size:15.5px}
+.review-link span{font-size:14px;color:var(--ink-2)}
+.review-link .go{flex-shrink:0;font-weight:600;color:var(--accent);font-size:14px;white-space:nowrap}
+.review-link:hover{border-color:var(--accent)}
+@media (max-width:640px){.review-link{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -361,6 +367,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <img src="img/sitemap.png" alt="Sơ đồ 17 mục website Evertrust Foods, cụm Seafood và OEM cùng 5 trang có form BowNow" width="1600" height="1000" loading="lazy">
       <figcaption><a href="img/sitemap.png" download="sitemap.png">Tải ảnh sitemap (PNG)</a></figcaption>
     </figure>
+
+    <a class="card review-link" href="header-preview.html" target="_blank" rel="noopener">
+      <div>
+        <b>Xem mô phỏng header và vị trí từng trang</b>
+        <span>Menu Seafood &amp; OEM sổ xuống, menu trên điện thoại, footer, và 17 trang nằm ở đâu.</span>
+      </div>
+      <span class="go">Mở trang review →</span>
+    </a>
 
     <div class="shell">
       <div class="card">
