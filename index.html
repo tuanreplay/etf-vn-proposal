@@ -238,6 +238,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .review-link .go{flex-shrink:0;font-weight:600;color:var(--accent);font-size:14px;white-space:nowrap}
 .review-link:hover{border-color:var(--accent)}
 @media (max-width:640px){.review-link{flex-direction:column;align-items:flex-start}}
+.changes{border-left:4px solid var(--accent);margin-bottom:18px;padding:18px 22px}
+.changes h3{margin:0 0 8px}
+.changes ul{margin:0 0 14px;padding-left:20px}
+.changes li{margin:4px 0}
+.changes .dl{display:inline-block;background:var(--accent);color:#fff;font-weight:600;padding:10px 16px;border-radius:6px;text-decoration:none}
+.changes .dl-note{margin:8px 0 0;font-size:14px;color:var(--ink-2)}
 </style>
 </head>
 <body>
@@ -248,7 +254,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <nav class="toc" aria-label="Mục lục">
       <a href="#tong-quan">Tổng quan</a>
       <a href="#sitemap">Sitemap</a>
-      <a href="#trang">17 trang</a>
+      <a href="#trang">16 trang</a>
       <a href="#bownow">BowNow</a>
       <a href="#ky-thuat">Kỹ thuật</a>
       <a href="#noi-dung">Nội dung</a>
@@ -268,7 +274,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div><dt>Khách hàng</dt><dd>Evertrust Foods Co., Ltd (ETF)<span>Công ty TNHH Thực phẩm Mãi Tín</span></dd></div>
       <div><dt>Đầu mối khách</dt><dd>Anh Trác Thuận Đức<span>Sales Department</span></dd></div>
       <div><dt>Đầu mối dự án</dt><dd>Chị Nguyễn Quỳnh Thao<span>Country Head, Cloud CIRCUS VN</span></dd></div>
-      <div><dt>Người soạn tài liệu</dt><dd>Team VFA<span>Cập nhật 20/11/2026</span></dd></div>
+      <div><dt>Người soạn tài liệu</dt><dd>Team VFA<span>Cập nhật 25/11/2026 sau họp với ETF</span></dd></div>
     </dl>
   </div>
 
@@ -281,10 +287,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <table class="kv">
           <tr><th>Doanh nghiệp</th><td>100% vốn Nhật, thành lập năm 2010</td></tr>
           <tr><th>Ngành</th><td>Chế biến, xuất khẩu thủy sản (trọng tâm cá ngừ). Hệ sinh thái: nông sản xuất khẩu, pet food, phân phối cá ngừ nội địa, resort, nhà hàng</td></tr>
-          <tr><th>Đối tượng</th><td>Nhà nhập khẩu, nhà phân phối, thương hiệu thực phẩm (B2B) tại Nhật, Mỹ, châu Âu</td></tr>
+          <tr><th>Đối tượng</th><td>Nhà nhập khẩu, nhà phân phối, thương hiệu thực phẩm (B2B). Thị trường hiện tại: Nhật ~80%, châu Âu ~10% (chủ yếu Anh), Mỹ, Canada</td></tr>
           <tr><th>Ngôn ngữ</th><td>EN (chính), JP, VN. URL có tiền tố <code>/en/</code> <code>/ja/</code> <code>/vi/</code></td></tr>
           <tr><th>Timeline</th><td>8-10 tuần, tính từ khi nhận đủ tư liệu <span class="tag warn">Chờ xác nhận</span></td></tr>
-          <tr><th>Phạm vi</th><td>Khoảng 15 trang/template × 3 ngôn ngữ, chưa tính các trang chi tiết sản phẩm</td></tr>
+          <tr><th>Phạm vi</th><td>16 trang/template × 3 ngôn ngữ, chưa tính các trang chi tiết sản phẩm (hơn 100 sản phẩm). Gộp 3 nhà máy dưới Evertrust Foods <span class="tag warn">Báo giá lại</span></td></tr>
         </table>
       </div>
       <div class="card goals">
@@ -293,7 +299,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
           <li><b>Tìm buyer mới</b> tại Nhật, Mỹ, châu Âu.</li>
           <li><b>Thu lead</b> qua form hỏi giá và form tải catalogue.</li>
           <li><b>Theo dõi hành vi</b> người xem bằng BowNow để đội Sales biết ai đang quan tâm, quan tâm sản phẩm nào.</li>
-          <li><b>Trọng tâm nội dung</b> là cụm Seafood processing &amp; OEM: nhà máy, chứng nhận, phòng lab, OEM.</li>
+          <li><b>Trọng tâm nội dung</b> là cụm Seafood processing (nhà máy, chứng nhận, phòng lab) và mục OEM &amp; Private label.</li>
         </ol>
       </div>
     </div>
@@ -304,6 +310,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <h2>2. Sitemap</h2>
     <p class="sub">Đường dẫn ví dụ theo bản EN. Bản JP và VN dùng cùng cấu trúc, đổi tiền tố thành <code>/ja/</code> và <code>/vi/</code>.</p>
 
+    <div class="card changes">
+      <h3>Thay đổi sau họp với ETF (25/11/2026)</h3>
+      <ul>
+        <li><b>OEM &amp; Private label</b> tách khỏi cụm Seafood thành mục riêng (<code>/en/oem</code>), không mô tả chi tiết vì khách OEM không muốn lộ việc sản xuất chung. Seafood chỉ giới thiệu sản phẩm, 2 nhà máy dùng chung.</li>
+        <li><b>Bỏ</b> trang Careers và Global markets. Thông tin thị trường chuyển sang About (tỷ trọng) và Quality &amp; certifications (chứng nhận → nước xuất được, kèm nút liên hệ thẳng công ty).</li>
+        <li><b>About</b> có bản đồ Evertrust JP → Cam Ranh, Bình Định và vai trò từng đơn vị. Our businesses dạng thẻ để thêm mảng khách sạn, tài chính, thời trang.</li>
+        <li><b>Products</b> gom nhóm, lọc ăn sống/ăn chín, lọc thị trường xuất khẩu, lọc có sẵn/OEM, ẩn hàng theo mùa/hết hàng. Trang chi tiết có nhãn và thời gian giao 1–3 ngày.</li>
+        <li><b>Form hỏi giá</b> thêm EUR.1 và bao bì tái chế. <b>Nút nổi</b> Zalo (bản VN), Email, WhatsApp.</li>
+      </ul>
+      <a class="dl" href="files/ETF_Sitemap_QuanLy_v2.xlsx" download>Tải file sitemap Excel (bản 25/11) ↓</a>
+      <p class="dl-note">File Excel có đủ 18 dòng trang, form BowNow, header &amp; footer và 11 câu hỏi cần ETF xác nhận. BowNow góp ý trực tiếp ở cột vàng.</p>
+    </div>
+
     <div class="card tree">
       <div class="tree-root"><div class="node root"><b>1. Home</b><code>/<wbr>en/<wbr></code><span class="nb">BowNow</span></div></div>
       <div class="zones">
@@ -312,24 +331,24 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
           <div class="nav-cols">
             <div class="stack">
               <div class="node"><b>2. About us</b><code>/<wbr>en/<wbr>about</code></div>
-              <div class="node hub"><b>3. Seafood processing &amp; OEM</b><code>/<wbr>en/<wbr>seafood</code>
+              <div class="node hub"><b>3. Seafood processing</b><code>/<wbr>en/<wbr>seafood</code>
                 <div class="children">
                   <div class="node hub"><b>4. Our factories</b><code>/<wbr>en/<wbr>seafood/<wbr>factories</code></div>
                   <div class="node hub"><b>5. Quality &amp; certifications</b><code>/<wbr>en/<wbr>seafood/<wbr>quality</code></div>
                   <div class="node hub"><b>6. Laboratory &amp; QC</b><code>/<wbr>en/<wbr>seafood/<wbr>laboratory</code></div>
-                  <div class="node hub"><b>7. OEM / private label</b><code>/<wbr>en/<wbr>seafood/<wbr>oem</code></div>
                 </div>
               </div>
             </div>
             <div class="stack">
+              <div class="node lead"><b>7. OEM &amp; Private label</b><code>/<wbr>en/<wbr>oem</code><span class="nb">BowNow</span><small>Mục riêng từ 25/11</small></div>
               <div class="node"><b>8. Products</b><code>/<wbr>en/<wbr>products</code>
                 <div class="children">
                   <div class="node lead"><b>9. Product detail</b><code>/<wbr>en/<wbr>products/<wbr>{slug}</code><span class="nb">BowNow</span></div>
                 </div>
               </div>
-              <div class="node"><b>10. Our businesses</b><code>/<wbr>en/<wbr>businesses</code></div>
             </div>
             <div class="stack">
+              <div class="node"><b>10. Our businesses</b><code>/<wbr>en/<wbr>businesses</code></div>
               <div class="node"><b>11. Sustainability</b><code>/<wbr>en/<wbr>sustainability</code></div>
               <div class="node"><b>12. News</b><code>/<wbr>en/<wbr>news</code>
                 <div class="children">
@@ -350,27 +369,27 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
           <h3>Trong footer và trang phụ</h3>
           <div class="stack">
             <div class="node lead"><b>14. Contact</b><code>/<wbr>en/<wbr>contact</code><span class="nb">BowNow</span></div>
-            <div class="node"><b>16. Careers (chỉ bản VN)</b><code>/<wbr>vi/<wbr>tuyen-dung</code></div>
-            <div class="node"><b>17. Privacy policy</b><code>/<wbr>en/<wbr>privacy</code></div>
-            <div class="node"><b>17. Thank-you</b><code>/<wbr>en/<wbr>thank-you</code><small>Không nằm trong menu, hiện sau khi gửi form</small></div>
+            <div class="node"><b>16. Privacy policy</b><code>/<wbr>en/<wbr>privacy</code></div>
+            <div class="node"><b>16. Thank-you</b><code>/<wbr>en/<wbr>thank-you</code><small>Không nằm trong menu, hiện sau khi gửi form</small></div>
+            <div class="node"><b>Nút nổi mọi trang</b><small>Zalo (chỉ bản VN) · Email · WhatsApp</small></div>
           </div>
         </div>
       </div>
       <div class="legend">
-        <span><i style="background:var(--navy)"></i>Cụm trọng tâm Seafood &amp; OEM</span>
-        <span><i style="background:var(--accent)"></i>Trang có form BowNow (5 trang: 1, 9, 13, 14, 15)</span>
+        <span><i style="background:var(--navy)"></i>Cụm Seafood (trang 3-6)</span>
+        <span><i style="background:var(--accent)"></i>Trang có form BowNow (7 trang: 1, 5, 7, 9, 13, 14, 15)</span>
       </div>
     </div>
 
     <figure class="proposal-figure sitemap-figure">
-      <img src="img/sitemap.png" alt="Sơ đồ 17 mục website Evertrust Foods, cụm Seafood và OEM cùng 5 trang có form BowNow" width="1600" height="1000" loading="lazy">
-      <figcaption><a href="img/sitemap.png" download="sitemap.png">Tải ảnh sitemap (PNG)</a></figcaption>
+      <img src="img/sitemap.png" alt="Sơ đồ 16 mục website Evertrust Foods bản 25/11: cụm Seafood 4 trang, mục OEM và Private label riêng, 7 trang có form BowNow" width="2248" height="1178" loading="lazy">
+      <figcaption><a href="img/sitemap.png" download="sitemap.png">Tải ảnh sitemap (PNG)</a> · <a href="files/ETF_Sitemap_QuanLy_v2.xlsx" download>Tải file Excel</a></figcaption>
     </figure>
 
     <a class="card review-link" href="header-preview.html" target="_blank" rel="noopener">
       <div>
         <b>Xem mô phỏng header và vị trí từng trang</b>
-        <span>Menu Seafood &amp; OEM sổ xuống, menu trên điện thoại, footer, và 17 trang nằm ở đâu.</span>
+        <span>Menu Seafood sổ xuống, mục OEM riêng, nút nổi, menu trên điện thoại, footer, và 16 trang nằm ở đâu.</span>
       </div>
       <span class="go">Mở trang review →</span>
     </a>
@@ -378,28 +397,28 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <div class="shell">
       <div class="card">
         <h3>Header</h3>
-        <p>Logo · About · Seafood &amp; OEM (thả xuống 4 trang con) · Products · Our businesses · Sustainability · News · chuyển ngôn ngữ EN | JP | VN · nút <b>Request a quote</b>.</p>
+        <p>Logo · About · Seafood (thả xuống 3 trang con) · OEM &amp; Private label · Products · Our businesses · Sustainability · News · chuyển ngôn ngữ EN | JP | VN · nút <b>Request a quote</b>. Nút nổi mọi trang: Zalo (chỉ bản VN), Email, WhatsApp.</p>
       </div>
       <div class="card">
         <h3>Footer</h3>
-        <p>Địa chỉ, điện thoại, email sales. Link toàn bộ trang, gồm Contact, Catalogue, Careers, Privacy policy. Nút chuyển ngôn ngữ.</p>
+        <p>Địa chỉ từng đơn vị (Evertrust JP, Cam Ranh, Bình Định), điện thoại, email sales. Link toàn bộ trang, gồm Contact, Catalogue, Privacy policy. Nút chuyển ngôn ngữ.</p>
       </div>
       <div class="card">
         <h3>Breadcrumb</h3>
-        <p>Có trên mọi trang trừ Home, khớp cấu trúc URL. Ví dụ: Home › Seafood processing &amp; OEM › Our factories.</p>
+        <p>Có trên mọi trang trừ Home, khớp cấu trúc URL. Ví dụ: Home › Seafood processing › Our factories.</p>
       </div>
     </div>
   </section>
 
-  <!-- 3. 17 trang -->
+  <!-- 3. 16 trang -->
   <section class="block" id="trang">
     <h2>3. Danh sách trang và chức năng</h2>
     <p class="sub">Ô màu vàng <span class="ph">[X]</span> là số liệu khách cung cấp. Không tự điền.</p>
 
     <div class="filters" role="group" aria-label="Lọc trang">
-      <button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả (17)</button>
-      <button class="chip" type="button" data-f="seafood" aria-pressed="false">Cụm Seafood (5)</button>
-      <button class="chip" type="button" data-f="lead" aria-pressed="false">Có form BowNow (5)</button>
+      <button class="chip" type="button" data-f="all" aria-pressed="true">Tất cả (16)</button>
+      <button class="chip" type="button" data-f="seafood" aria-pressed="false">Cụm Seafood (4)</button>
+      <button class="chip" type="button" data-f="lead" aria-pressed="false">Có form BowNow (7)</button>
       <button class="chip" type="button" data-f="cao" aria-pressed="false">Ưu tiên cao (11)</button>
     </div>
 
@@ -410,54 +429,51 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         </thead>
         <tbody>
           <tr data-g="lead cao"><td>1</td><td class="name">Home</td><td class="url"><code>/en/</code></td><td>Logo</td>
-            <td class="desc">Hero (video/ảnh nhà máy) + 2 CTA: Request a quote, Download catalogue. Thanh chứng nhận. 3 năng lực cốt lõi (Factories, Lab, OEM). Sản phẩm nổi bật. Khối số liệu: năm thành lập, công suất <span class="ph">[X]</span>, thị trường <span class="ph">[X]</span>, nhân sự <span class="ph">[X]</span>. Markets we serve (bản đồ). Our businesses. Sustainability. 3 tin mới. Form hỏi giá cuối trang<span class="bn">BowNow</span></td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Hero (video/ảnh nhà máy) + 2 CTA: Request a quote, Download catalogue. Thanh chứng nhận (mã EU <span class="ph">[X]</span>, BRCGS, FDA, HACCP). 3 năng lực cốt lõi: Nhà máy, Lab, OEM &amp; Private label. Sản phẩm nổi bật kèm nhãn thị trường xuất khẩu. Khối số liệu: năm thành lập, công suất <span class="ph">[X]</span>, nhân sự <span class="ph">[X]</span>. Our businesses. Sustainability. 3 tin mới. Form hỏi giá cuối trang. Bỏ khối "Markets we serve"<span class="bn">BowNow</span></td>
             <td><span class="tag hi">Cao</span></td></tr>
           <tr data-g="cao"><td>2</td><td class="name">About us</td><td class="url"><code>/en/about</code></td><td>Header</td>
-            <td class="desc">Lịch sử, vốn Nhật, thông điệp CEO Kimura (ảnh + lời nhắn), số liệu, thị trường xuất khẩu.</td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Lịch sử, vốn Nhật, thông điệp CEO Kimura. Bản đồ hệ thống: Evertrust JP (bên Nhật nhập khẩu, không sản xuất) → Cam Ranh, Bình Định <span class="ph">[X]</span>, ghi rõ mỗi đơn vị làm gì. 3 nhà máy gộp dưới tên Evertrust Foods. Thị trường: Nhật ~80%, châu Âu ~10% (chủ yếu Anh), Mỹ, Canada <span class="ph">[X]</span>.</td>
             <td><span class="tag hi">Cao</span></td></tr>
-          <tr data-g="seafood cao"><td>3</td><td class="name">Seafood processing &amp; OEM<span>Trang hub</span></td><td class="url"><code>/en/seafood</code></td><td>Header, có menu thả xuống</td>
-            <td class="desc">Giới thiệu năng lực, thẻ liên kết 4 trang con, quy trình OEM tóm tắt, CTA. Menu phụ (sub-nav) cố định trên mọi trang cụm Seafood.</td>
+          <tr data-g="seafood cao"><td>3</td><td class="name">Seafood processing<span>Trang hub</span></td><td class="url"><code>/en/seafood</code></td><td>Header, có menu thả xuống</td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Chỉ giới thiệu năng lực chế biến và sản phẩm thủy sản, không mô tả OEM. 2 nhà máy dùng chung. Thẻ liên kết 3 trang con, sản phẩm tiêu biểu, CTA. Menu phụ (sub-nav) cố định trên mọi trang cụm Seafood.</td>
             <td><span class="tag hi">Cao</span></td></tr>
           <tr data-g="seafood cao"><td>4</td><td class="name">Our factories</td><td class="url"><code>/en/seafood/factories</code></td><td>Dropdown Seafood</td>
-            <td class="desc">Theo từng nhà máy: diện tích <span class="ph">[X]</span>, công suất/ngày <span class="ph">[X]</span>, cấp đông <span class="ph">[X]</span>, kho lạnh <span class="ph">[X]</span>, nhân sự <span class="ph">[X]</span>, mã EU <span class="ph">[X]</span>, số FDA <span class="ph">[X]</span>. Video tour + gallery ảnh. CTA đặt lịch tham quan nhà máy.</td>
+            <td class="desc">2 nhà máy thủy sản dùng chung <span class="ph">[X]</span>. Mỗi nhà máy: diện tích <span class="ph">[X]</span>, công suất/ngày <span class="ph">[X]</span>, cấp đông <span class="ph">[X]</span>, kho lạnh <span class="ph">[X]</span>, nhân sự <span class="ph">[X]</span>, mã EU <span class="ph">[X]</span>, số FDA <span class="ph">[X]</span>. Video tour + gallery ảnh. CTA đặt lịch tham quan nhà máy.</td>
             <td><span class="tag hi">Cao</span></td></tr>
-          <tr data-g="seafood cao"><td>5</td><td class="name">Quality &amp; certifications</td><td class="url"><code>/en/seafood/quality</code></td><td>Dropdown Seafood</td>
-            <td class="desc">Thẻ từng chứng nhận (FDA, BRCGS, HACCP…): số hiệu, đơn vị cấp, hiệu lực, nút xem/tải PDF. Truy xuất nguồn gốc và tuân thủ IUU.</td>
+          <tr data-g="seafood lead cao"><td>5</td><td class="name">Quality &amp; certifications</td><td class="url"><code>/en/seafood/quality</code></td><td>Dropdown Seafood</td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Thẻ từng chứng nhận (mã EU, BRCGS, FDA, HACCP…): số hiệu, đơn vị cấp, hiệu lực, nút xem/tải PDF. Bảng "chứng nhận → thị trường xuất được" (Nhật, EU, Anh, Mỹ, Canada) thay trang Global markets. Truy xuất nguồn gốc, IUU. CTA liên hệ thẳng công ty: email, điện thoại, WhatsApp, form liên hệ<span class="bn">BowNow</span></td>
             <td><span class="tag hi">Cao</span></td></tr>
           <tr data-g="seafood cao"><td>6</td><td class="name">Laboratory &amp; QC</td><td class="url"><code>/en/seafood/laboratory</code></td><td>Dropdown Seafood</td>
             <td class="desc">Giới thiệu lab nội bộ, danh sách chỉ tiêu kiểm <span class="ph">[X]</span>, thiết bị, quy trình kiểm theo lô.</td>
             <td><span class="tag hi">Cao</span></td></tr>
-          <tr data-g="seafood cao"><td>7</td><td class="name">OEM / private label</td><td class="url"><code>/en/seafood/oem</code></td><td>Dropdown Seafood</td>
-            <td class="desc">Quy trình 5 bước: Spec → Sample → Production → Inspection → Shipment. Quy cách đóng gói. CTA.</td>
+          <tr data-g="lead cao"><td>7</td><td class="name">OEM &amp; Private label<span>Mục riêng</span></td><td class="url"><code>/en/oem</code></td><td>Header</td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Tách khỏi cụm Seafood, gộp OEM và Private label. Chỉ nêu năng lực chung: quy trình 5 bước (Spec → Sample → Production → Inspection → Shipment), quy cách đóng gói, bao bì tái chế <span class="ph">[X]</span>, MOQ <span class="ph">[X]</span>. Không nêu tên khách, dây chuyền hay sản phẩm làm cho khách nào. CTA hỏi giá OEM<span class="bn">BowNow</span></td>
             <td><span class="tag hi">Cao</span></td></tr>
           <tr data-g="cao"><td>8</td><td class="name">Products<span>Danh mục</span></td><td class="url"><code>/en/products</code></td><td>Header</td>
-            <td class="desc">Danh mục có bộ lọc theo loại: Tuna, Frozen seafood, OEM.</td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Hơn 100 sản phẩm, gom theo nhóm chính <span class="ph">[X]</span>. Bộ lọc: nhóm sản phẩm; Ăn sống / Ăn chín; Thị trường xuất khẩu (Nhật, EU, Anh, Mỹ, Canada); Hàng có sẵn / Chỉ OEM. Sản phẩm theo mùa hoặc hết hàng ẩn được bằng 1 nút trong WordPress.</td>
             <td><span class="tag hi">Cao</span></td></tr>
           <tr data-g="lead cao"><td>9</td><td class="name">Product detail<span>Template</span></td><td class="url"><code>/en/products/{slug}</code></td><td>Từ danh mục</td>
-            <td class="desc">Tên EN + tên khoa học, quy cách cắt, size, đóng gói, xử lý, MOQ, ảnh. Nút tải spec sheet (qua form BowNow) và nút hỏi giá sản phẩm này<span class="bn">BowNow</span></td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Nhãn "Có sẵn" / "Chỉ OEM", nhãn Ăn sống / Ăn chín, nhãn thị trường xuất khẩu được. Giao hàng 1–3 ngày <span class="ph">[X]</span>. Tên EN + tên khoa học, quy cách cắt, size, đóng gói, xử lý, MOQ, ảnh. Nút tải spec sheet và nút hỏi giá sản phẩm này<span class="bn">BowNow</span></td>
             <td><span class="tag hi">Cao</span></td></tr>
           <tr data-g="mid"><td>10</td><td class="name">Our businesses</td><td class="url"><code>/en/businesses</code></td><td>Header</td>
-            <td class="desc">1 trang, 5 mục: Mãi Tín Bình Định; Nông sản xuất khẩu (sấy thăng hoa, khoai mật, OEM đóng gói); Pet food; Phân phối cá ngừ nội địa; Resort &amp; nhà hàng (link ngoài nếu có).</td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Lưới thẻ, thêm/bớt mảng trong WordPress không cần sửa giao diện. Hiện có: Mãi Tín Bình Định; Nông sản xuất khẩu; Pet food; Phân phối cá ngừ nội địa; Resort &amp; nhà hàng. Sắp thêm phía Nhật: khách sạn, tài chính, thời trang <span class="ph">[X]</span>.</td>
             <td><span class="tag mid">Trung bình</span></td></tr>
           <tr data-g="mid"><td>11</td><td class="name">Sustainability</td><td class="url"><code>/en/sustainability</code></td><td>Header</td>
-            <td class="desc">Câu chuyện không lãng phí (phụ phẩm cá ngừ → pet food), nguồn nguyên liệu có trách nhiệm.</td>
+            <td class="desc">Câu chuyện không lãng phí (phụ phẩm cá ngừ → pet food), nguồn nguyên liệu có trách nhiệm, bao bì tái chế nếu có <span class="ph">[X]</span>.</td>
             <td><span class="tag mid">Trung bình</span></td></tr>
           <tr data-g="mid"><td>12</td><td class="name">News<span>Danh sách + chi tiết</span></td><td class="url"><code>/en/news</code><br><code>/en/news/{slug}</code></td><td>Header</td>
             <td class="desc">Danh sách + chi tiết bài. Phân loại: Sự kiện/hội chợ, Sản phẩm, Chứng nhận. Bài liên quan, link về trang sản phẩm.</td>
             <td><span class="tag mid">Trung bình</span></td></tr>
           <tr data-g="lead cao"><td>13</td><td class="name">Request a quote</td><td class="url"><code>/en/request-a-quote</code></td><td>Nút CTA trên header</td>
-            <td class="desc">Form hỏi giá, chuyển sang trang Thank-you sau khi gửi<span class="bn">BowNow</span></td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Form hỏi giá, thêm câu hỏi EUR.1 và bao bì tái chế. Gửi xong chuyển sang trang Thank-you<span class="bn">BowNow</span></td>
             <td><span class="tag hi">Cao</span></td></tr>
           <tr data-g="lead mid"><td>14</td><td class="name">Contact</td><td class="url"><code>/en/contact</code></td><td>Footer</td>
-            <td class="desc">Thông tin liên hệ, bản đồ, form liên hệ có ô chọn phòng ban<span class="bn">BowNow</span></td>
+            <td class="desc"><span class="tag warn">Đổi 25/11</span> Liên hệ từng đơn vị (Evertrust JP, Cam Ranh, Bình Định) <span class="ph">[X]</span>, bản đồ, form có ô phòng ban Sales / OEM / Khác<span class="bn">BowNow</span></td>
             <td><span class="tag mid">Trung bình</span></td></tr>
           <tr data-g="lead cao"><td>15</td><td class="name">Catalogue download</td><td class="url"><code>/en/catalogue</code></td><td>Footer, các nút CTA</td>
             <td class="desc">Form ngắn, gửi xong trả file PDF catalogue<span class="bn">BowNow</span></td>
             <td><span class="tag hi">Cao</span></td></tr>
-          <tr data-g="lo"><td>16</td><td class="name">Careers<span>Chỉ bản VN</span></td><td class="url"><code>/vi/tuyen-dung</code></td><td>Footer</td>
-            <td class="desc">Danh sách vị trí tuyển dụng, khách tự cập nhật trong WordPress.</td>
-            <td><span class="tag lo">Thấp</span></td></tr>
-          <tr data-g="lo"><td>17</td><td class="name">Privacy policy, Thank-you</td><td class="url"><code>/en/privacy</code><br><code>/en/thank-you</code></td><td>Footer / sau khi gửi form</td>
+          <tr data-g="lo"><td>16</td><td class="name">Privacy policy, Thank-you</td><td class="url"><code>/en/privacy</code><br><code>/en/thank-you</code></td><td>Footer / sau khi gửi form</td>
             <td class="desc">Chính sách bảo mật, thông báo cookie cho buyer châu Âu. Trang Thank-you là điểm đo chuyển đổi.</td>
             <td><span class="tag lo">Thấp</span></td></tr>
         </tbody>
@@ -480,9 +496,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 
     <div class="forms">
       <article class="card form-card">
-        <header><h3>Request a quote</h3><span class="where">Trang 13, nút trên header, cuối Home</span></header>
-        <ul class="fields"><li>Họ tên</li><li>Công ty</li><li>Email</li><li>Quốc gia</li><li>Sản phẩm quan tâm</li><li>Sản lượng</li><li>Lời nhắn</li><li class="hid">Ngôn ngữ (ẩn)</li><li class="hid">Trang nguồn (ẩn)</li></ul>
-        <p>Form chính để hỏi giá. Nút "Hỏi giá sản phẩm này" ở trang chi tiết tự điền sẵn ô Sản phẩm quan tâm.</p>
+        <header><h3>Request a quote</h3><span class="where">Trang 13, nút trên header, cuối Home, trang 7 OEM</span></header>
+        <ul class="fields"><li>Họ tên</li><li>Công ty</li><li>Email</li><li>Quốc gia</li><li>Sản phẩm quan tâm</li><li>Loại hàng: có sẵn / OEM</li><li>Sản lượng</li><li>Thị trường nhập khẩu</li><li>Cần EUR.1</li><li>Bao bì tái chế</li><li>Lời nhắn</li><li class="hid">Ngôn ngữ (ẩn)</li><li class="hid">Trang nguồn (ẩn)</li></ul>
+        <p>Form chính để hỏi giá. Nút "Hỏi giá sản phẩm này" ở trang chi tiết tự điền sẵn Sản phẩm và Loại hàng; trang OEM tự chọn OEM. EUR.1 và bao bì tái chế thêm theo họp 25/11.</p>
       </article>
       <article class="card form-card">
         <header><h3>Catalogue download</h3><span class="where">Trang 15, footer, các nút CTA</span></header>
@@ -495,8 +511,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <p>Buyer xin spec của sản phẩm nào thì Sales biết ngay sản phẩm đó qua trang nguồn. <span class="tag warn">Trường form chờ chốt</span></p>
       </article>
       <article class="card form-card">
-        <header><h3>Contact</h3><span class="where">Trang 14, footer</span></header>
-        <ul class="fields"><li>Họ tên</li><li>Email</li><li>Lời nhắn</li><li>Phòng ban: Sales / OEM / Tuyển dụng / Khác</li><li class="hid">Ngôn ngữ (ẩn)</li><li class="hid">Trang nguồn (ẩn)</li></ul>
+        <header><h3>Contact</h3><span class="where">Trang 14, footer, CTA trang 5</span></header>
+        <ul class="fields"><li>Họ tên</li><li>Email</li><li>Lời nhắn</li><li>Phòng ban: Sales / OEM / Khác</li><li class="hid">Ngôn ngữ (ẩn)</li><li class="hid">Trang nguồn (ẩn)</li></ul>
         <p>Ô phòng ban giúp chuyển lead đúng người. <span class="tag warn">Trường khác chờ chốt</span></p>
       </article>
     </div>
@@ -507,6 +523,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <dt>Form</dt><dd>Dùng form BowNow nhúng, hoặc form WordPress đẩy dữ liệu về BowNow. Chọn 1 cách và dùng cho cả 4 form.</dd>
       <dt>Trường ẩn</dt><dd><code>language</code> = en / ja / vi lấy từ URL. <code>source_url</code> = địa chỉ trang buyer bấm gửi form.</dd>
       <dt>Chống spam</dt><dd>reCAPTCHA hoặc tương đương trên cả 4 form.</dd>
+      <dt>Nút nổi</dt><dd>Zalo, Email, WhatsApp không đi qua form: đo bằng sự kiện click trong GA4 để vẫn biết nguồn liên hệ.</dd>
     </dl>
   </section>
 
@@ -518,10 +535,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div class="card">
         <h3>Nền tảng và đa ngôn ngữ</h3>
         <ul>
-          <li><b>WordPress:</b> khách tự cập nhật sản phẩm, tin tức, tuyển dụng. Sản phẩm dùng custom post type + trường spec.</li>
+          <li><b>WordPress:</b> khách tự cập nhật sản phẩm, tin tức. Sản phẩm dùng custom post type + trường spec, nhãn (có sẵn/OEM, sống/chín, thị trường xuất khẩu) và nút ẩn hàng theo mùa/hết hàng.</li>
           <li><b>3 ngôn ngữ:</b> EN mặc định, JP, VN. URL <code>/en/</code> <code>/ja/</code> <code>/vi/</code>. Nút chuyển ngôn ngữ giữ đúng trang tương ứng.</li>
           <li><b>Font:</b> hỗ trợ tiếng Nhật, ví dụ Noto Sans JP.</li>
-          <li><b>Responsive:</b> desktop, tablet, mobile. Menu thu gọn trên mobile, nút hỏi giá luôn dễ bấm.</li>
+          <li><b>Responsive:</b> desktop, tablet, mobile. Menu thu gọn trên mobile, nút hỏi giá luôn dễ bấm, 3 nút nổi gom thành 1 trên điện thoại.</li>
         </ul>
       </div>
       <div class="card">
@@ -566,9 +583,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       <div class="card plain">
         <dl>
           <dt>Thiết kế</dt><dd>Theo mockup 7 trang bản EN: màu navy theo nhận diện Evertrust, phong cách B2B chuyên nghiệp, nhiều ảnh thật nhà máy. Đề xuất dùng theme có sẵn rồi tùy biến.</dd>
-          <dt>Copywriting (Cloud CIRCUS)</dt><dd>Viết bản EN cho từng trang theo hướng bán hàng B2B và SEO. Khách duyệt nội dung chuyên môn: thông số, chứng nhận.</dd>
-          <dt>Dịch</dt><dd>Từ bản EN đã duyệt sang JP và VN. Bản JP cần người kiểm tra tiếng Nhật kinh doanh.</dd>
-          <dt>Sản phẩm</dt><dd>Nhập sẵn tối đa <span class="ph">[15]</span> sản phẩm, khách tự thêm sau.</dd>
+          <dt>Copywriting (Cloud CIRCUS)</dt><dd>Viết bản EN cho từng trang theo hướng bán hàng B2B và SEO. Khách duyệt nội dung chuyên môn: thông số, chứng nhận. <span class="tag warn">ETF kiểm tra chi phí</span></dd>
+          <dt>Dịch</dt><dd>Từ bản EN đã duyệt sang JP và VN. Bản JP cần người kiểm tra tiếng Nhật kinh doanh. <span class="tag warn">ETF kiểm tra chi phí</span></dd>
+          <dt>Sản phẩm</dt><dd>Hơn 100 sản phẩm, gom theo nhóm chính. Số sản phẩm nhập sẵn <span class="ph">[X]</span> chốt trong báo giá mới, khách tự thêm phần còn lại.</dd>
         </dl>
       </div>
       <div class="card">
@@ -599,6 +616,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <li><b>Trường form</b> Spec sheet và Contact. Mỗi phòng ban trong form Contact gửi về email nào.</li>
         <li><b>Danh sách URL cũ</b> của etf-vn.com để làm redirect 301.</li>
         <li><b>Link ngoài</b> của resort và nhà hàng (nếu có).</li>
+        <li><b>Sau họp 25/11:</b> sản phẩm nào có sẵn, sản phẩm nào chỉ làm OEM; tiêu chí gom hơn 100 sản phẩm.</li>
+        <li><b>Bộ lọc xuất khẩu</b> tách riêng EU và Anh không; giao 1–3 ngày áp dụng cho hàng nào.</li>
+        <li><b>2 nhà máy thủy sản dùng chung</b> là nhà máy nào; nhà máy thứ 3 làm gì.</li>
+        <li><b>Mảng khách sạn, tài chính, thời trang</b> làm ngay hay chỉ để sẵn giao diện.</li>
+        <li><b>Số Zalo/OA, WhatsApp, email</b> cho nút nổi.</li>
+        <li><b>Tên miền etfgroup.com</b>: dùng làm tên miền chính hay chỉ mua để giữ.</li>
+        <li><b>Báo giá lại</b> do gộp 3 nhà máy, mục OEM riêng, bộ lọc xuất khẩu, nút nổi.</li>
       </ul>
     </div>
   </section>
@@ -609,7 +633,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <footer>
   <div class="wrap">
     <span>Evertrust Foods Co., Ltd · etf-vn.com</span>
-    <span>Tài liệu do Team VFA soạn · Cập nhật 20/11/2026</span>
+    <span>Tài liệu do Team VFA soạn · Cập nhật 25/11/2026</span>
   </div>
 </footer>
 

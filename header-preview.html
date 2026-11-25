@@ -17,12 +17,12 @@ h1{font-size:26px;margin:0 0 4px}
 .lead{color:var(--ink-2);margin:0 0 28px}
 h2{font-size:19px;margin:40px 0 6px}
 h2 + p{color:var(--ink-2);margin:0 0 14px}
-.frame{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgb(18 48 94 / .08)}
+.frame{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;overflow-x:auto;box-shadow:0 6px 24px rgb(18 48 94 / .08)}
 
 /* Header máy tính */
-.hdr{display:flex;align-items:center;gap:26px;height:72px;padding:0 28px;border-bottom:1px solid var(--line)}
+.hdr{display:flex;align-items:center;gap:18px;height:72px;padding:0 20px;border-bottom:1px solid var(--line)}
 .logo{font-weight:700;color:var(--navy);font-size:19px;letter-spacing:.01em;white-space:nowrap}
-.menu{display:flex;gap:22px;flex:1;font-weight:500;font-size:14.5px;color:var(--navy);white-space:nowrap}
+.menu{display:flex;gap:15px;flex:1;font-weight:500;font-size:14px;color:var(--navy);white-space:nowrap}
 .menu span{position:relative;padding:6px 0}
 .menu .open{border-bottom:2px solid var(--navy)}
 .lang{font-size:13.5px;color:var(--ink-2);white-space:nowrap}
@@ -66,6 +66,13 @@ h2 + p{color:var(--ink-2);margin:0 0 14px}
 .p-hero .cta{display:inline-block;margin:0 8px 8px 0}
 .p-hero .cta.ghost{color:#fff;border-color:#fff}
 .cap{font-size:13.5px;color:var(--ink-2);margin-top:10px;max-width:330px}
+/* Nút nổi (họp 25/11) */
+.float{position:absolute;right:22px;bottom:22px;display:flex;flex-direction:column;gap:10px}
+.float span{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;box-shadow:0 6px 16px rgb(0 0 0 / .25)}
+.f-zalo{background:#0068ff}.f-mail{background:#475569}.f-wa{background:#22a35a}
+.p-body{position:relative}
+.p-float{position:absolute;right:14px;bottom:14px;width:48px;height:48px;border-radius:50%;background:#fff;color:var(--navy);border:2px solid var(--accent);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgb(0 0 0 / .3)}
+.newtag{display:inline-block;background:var(--note);color:#fff;font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
 
 /* Footer */
 .ftr{background:#0f2447;color:#d6e0f0;padding:34px 32px 20px}
@@ -91,16 +98,17 @@ h2 + p{color:var(--ink-2);margin:0 0 14px}
 <body>
 <div class="wrap">
   <h1>Header, menu sổ xuống và vị trí từng trang</h1>
-  <p class="lead">Mô phỏng bố cục để duyệt vị trí, chưa phải thiết kế cuối. Nhãn tím là ghi chú giải thích.</p>
+  <p class="lead">Mô phỏng bố cục để duyệt vị trí, chưa phải thiết kế cuối. Nhãn tím là ghi chú giải thích. <b>Bản cập nhật 25/11/2026 sau họp với ETF:</b> OEM &amp; Private label tách thành mục riêng, Seafood còn 3 trang con, bỏ Careers, thêm nút nổi Zalo / Email / WhatsApp.</p>
 
-  <h2>1. Header trên máy tính, đang mở menu Seafood &amp; OEM</h2>
-  <p>Rê chuột (hoặc bấm) vào "Seafood &amp; OEM" thì bảng này sổ xuống. Header luôn dính ở đầu trang khi cuộn.</p>
+  <h2>1. Header trên máy tính, đang mở menu Seafood</h2>
+  <p>Rê chuột (hoặc bấm) vào "Seafood" thì bảng này sổ xuống. "OEM &amp; Private label" là mục riêng, bấm vào mở thẳng trang OEM, không sổ xuống. Header luôn dính ở đầu trang khi cuộn.</p>
   <div class="frame">
     <div class="hdr">
       <div class="logo">EVERTRUST FOODS</div>
       <div class="menu">
         <span>About us</span>
-        <span class="open">Seafood &amp; OEM ▾</span>
+        <span class="open">Seafood ▾</span>
+        <span>OEM &amp; Private label</span>
         <span>Products</span>
         <span>Our businesses</span>
         <span>Sustainability</span>
@@ -112,49 +120,51 @@ h2 + p{color:var(--ink-2);margin:0 0 14px}
     <div class="stage">
       <div class="dd">
         <div class="ov">
-          <b>Seafood processing &amp; OEM</b>
-          <p>Năng lực chế biến cá ngừ và gia công cho đối tác nhập khẩu.</p>
+          <b>Seafood processing</b>
+          <p>Năng lực chế biến thủy sản, 2 nhà máy dùng chung. Chỉ giới thiệu sản phẩm, không mô tả OEM.</p>
           <a>Xem tổng quan →</a>
         </div>
         <ul>
           <li class="hl"><b>Our factories</b><span>Nhà máy, cấp đông, kho lạnh, video tour</span></li>
-          <li><b>Quality &amp; certifications</b><span>FDA, BRCGS, HACCP, tải PDF chứng nhận</span></li>
+          <li><b>Quality &amp; certifications</b><span>Mã EU, BRCGS, FDA, HACCP; chứng nhận → nước xuất được</span></li>
           <li><b>Laboratory &amp; QC</b><span>Phòng lab nội bộ, kiểm theo từng lô</span></li>
-          <li><b>OEM / private label</b><span>Quy trình 5 bước, đóng gói theo yêu cầu</span></li>
         </ul>
       </div>
-      <div class="pin left" style="left:882px;top:120px">Trang hub (số 3) + 4 trang con (số 4-7)</div>
+      <div class="pin left" style="left:882px;top:120px">Trang hub (số 3) + 3 trang con (số 4-6)</div>
       <div class="pin left" style="left:882px;top:160px">Chỉ mục này có menu sổ xuống</div>
+      <div class="pin left" style="left:882px;top:200px">Số 7 OEM: mục riêng, không sổ xuống</div>
       <div class="pin up" style="right:24px;top:14px">Nút hỏi giá: luôn hiện, mọi trang</div>
       <div class="pin up" style="right:170px;top:54px">Đổi ngôn ngữ, giữ đúng trang đang xem</div>
       <div class="hero-txt">Phần hero trang chủ<br>nằm phía sau</div>
+      <div class="float"><span class="f-zalo">Zalo</span><span class="f-mail">Email</span><span class="f-wa">WA</span></div>
+      <div class="pin left" style="right:84px;bottom:70px;left:auto">Nút nổi mọi trang: Zalo (chỉ bản VN), Email, WhatsApp</div>
     </div>
   </div>
 
   <h2>2. Trên điện thoại</h2>
-  <p>Menu thu vào nút "Menu". Bấm vào Seafood &amp; OEM thì 4 trang con xổ ra ngay bên dưới (kiểu accordion). Nút hỏi giá dính ở đáy màn hình.</p>
+  <p>Menu thu vào nút "Menu". Bấm vào Seafood thì 3 trang con xổ ra ngay bên dưới (kiểu accordion). Nút hỏi giá dính ở đáy màn hình. 3 nút nổi gom thành 1 nút tròn "Liên hệ", bấm mới mở ra Zalo / Email / WhatsApp, để không đè nút hỏi giá (đề xuất của VFA).</p>
   <div class="phones">
     <div>
       <div class="phone">
         <div class="p-hdr"><div class="logo">EVERTRUST FOODS</div><div class="burger">Menu</div></div>
-        <div class="p-body"><div class="p-hero"><b>Tuna processing &amp; OEM from Vietnam</b><p>Japanese-owned seafood processor since 2010.</p><span class="cta">Request a quote</span><span class="cta ghost">Download catalogue</span></div></div>
+        <div class="p-body"><div class="p-hero"><b>Tuna processing &amp; OEM from Vietnam</b><p>Japanese-owned seafood processor since 2010.</p><span class="cta">Request a quote</span><span class="cta ghost">Download catalogue</span></div><div class="p-float">Liên hệ</div></div>
         <div class="p-foot"><div class="cta">Request a quote</div></div>
       </div>
-      <p class="cap">Lúc đóng menu: chỉ có logo, nút Menu và nút hỏi giá dính đáy.</p>
+      <p class="cap">Lúc đóng menu: logo, nút Menu, nút hỏi giá dính đáy và 1 nút nổi "Liên hệ".</p>
     </div>
     <div>
       <div class="phone">
         <div class="p-hdr"><div class="logo">EVERTRUST FOODS</div><div class="burger">Đóng ✕</div></div>
         <div class="p-body">
           <div class="p-item">About us</div>
-          <div class="p-item exp">Seafood &amp; OEM <span>−</span></div>
+          <div class="p-item exp">Seafood <span>−</span></div>
           <div class="p-sub">
             <div>Tổng quan</div>
             <div>Our factories</div>
             <div>Quality &amp; certifications</div>
             <div>Laboratory &amp; QC</div>
-            <div>OEM / private label</div>
           </div>
+          <div class="p-item">OEM &amp; Private label</div>
           <div class="p-item">Products</div>
           <div class="p-item">Our businesses</div>
           <div class="p-item">Sustainability</div>
@@ -163,32 +173,33 @@ h2 + p{color:var(--ink-2);margin:0 0 14px}
         </div>
         <div class="p-foot"><div class="cta">Request a quote</div></div>
       </div>
-      <p class="cap">Lúc mở menu: Seafood &amp; OEM đang xổ 4 trang con. Mỗi dòng cao tối thiểu 44px, dễ bấm.</p>
+      <p class="cap">Lúc mở menu: Seafood đang xổ 3 trang con, OEM &amp; Private label là dòng riêng. Mỗi dòng cao tối thiểu 44px, dễ bấm.</p>
     </div>
   </div>
 
   <h2>3. Footer (chân trang)</h2>
-  <p>Có ở cuối mọi trang. Contact, Catalogue, Careers, Privacy chỉ nằm ở đây, không có trên header.</p>
+  <p>Có ở cuối mọi trang. Contact, Catalogue, Privacy chỉ nằm ở đây, không có trên header. Trang Careers đã bỏ (họp 25/11).</p>
   <div class="frame">
     <div class="ftr">
       <div class="fcols">
-        <div><h4>EVERTRUST FOODS</h4><span>Địa chỉ <span class="ph">[X]</span></span><span>Điện thoại <span class="ph">[X]</span></span><span>Email sales <span class="ph">[X]</span></span></div>
+        <div><h4>EVERTRUST FOODS</h4><span>Evertrust JP <span class="ph">[X]</span></span><span>Nhà máy Cam Ranh <span class="ph">[X]</span></span><span>Bình Định <span class="ph">[X]</span></span><span>Email sales <span class="ph">[X]</span></span></div>
         <div><h4>Company</h4><span>About us</span><span>Our businesses</span><span>Sustainability</span><span>News</span></div>
-        <div><h4>Seafood &amp; OEM</h4><span>Our factories</span><span>Quality &amp; certifications</span><span>Laboratory &amp; QC</span><span>OEM / private label</span></div>
-        <div><h4>Products</h4><span>Tuna</span><span>Frozen seafood</span><span>OEM</span></div>
-        <div><h4>Liên hệ</h4><span>Contact</span><span>Catalogue download</span><span class="vn">Careers (chỉ bản VN)</span><span>Privacy policy</span></div>
+        <div><h4>Seafood</h4><span>Our factories</span><span>Quality &amp; certifications</span><span>Laboratory &amp; QC</span></div>
+        <div><h4>Products &amp; OEM</h4><span>Nhóm sản phẩm <span class="ph">[X]</span></span><span>Ăn sống / Ăn chín</span><span>OEM &amp; Private label</span></div>
+        <div><h4>Liên hệ</h4><span>Contact</span><span>Catalogue download</span><span>Privacy policy</span></div>
       </div>
       <div class="fbot"><span>© Evertrust Foods Co., Ltd</span><span>EN | JP | VN</span></div>
     </div>
   </div>
 
   <h2>4. Mỗi trang nằm ở đâu</h2>
-  <p>Đủ 17 mục trong sitemap. Có những trang không nằm trên menu nào, người xem vào bằng nút hoặc link.</p>
+  <p>Đủ 16 mục trong sitemap bản 25/11. Có những trang không nằm trên menu nào, người xem vào bằng nút hoặc link.</p>
   <div class="map">
     <div class="box"><h3>Trên header</h3><ol>
       <li value="1">Home <small>(bấm logo)</small></li>
       <li value="2">About us</li>
-      <li value="3">Seafood &amp; OEM</li>
+      <li value="3">Seafood processing</li>
+      <li value="7">OEM &amp; Private label <span class="newtag">mới</span></li>
       <li value="8">Products</li>
       <li value="10">Our businesses</li>
       <li value="11">Sustainability</li>
@@ -199,19 +210,17 @@ h2 + p{color:var(--ink-2);margin:0 0 14px}
       <li value="4">Our factories</li>
       <li value="5">Quality &amp; certifications</li>
       <li value="6">Laboratory &amp; QC</li>
-      <li value="7">OEM / private label</li>
-    </ol><p style="margin:10px 0 0;font-size:13px;color:var(--ink-3)">Cũng có thanh menu phụ cố định trên 5 trang của cụm Seafood.</p></div>
+    </ol><p style="margin:10px 0 0;font-size:13px;color:var(--ink-3)">Cũng có thanh menu phụ cố định trên 4 trang của cụm Seafood.</p></div>
     <div class="box"><h3>Chỉ ở footer</h3><ol>
       <li value="14">Contact</li>
       <li value="15">Catalogue download</li>
-      <li value="16">Careers <small>(chỉ bản VN)</small></li>
-      <li value="17">Privacy policy</li>
+      <li value="16">Privacy policy</li>
     </ol></div>
     <div class="box hl"><h3>Không nằm trên menu</h3><ol>
       <li value="9">Product detail <small>(bấm 1 sản phẩm trong Products)</small></li>
       <li value="12">Bài tin chi tiết <small>(bấm 1 bài trong News)</small></li>
-      <li value="17">Thank-you <small>(tự hiện sau khi gửi form)</small></li>
-    </ol><p style="margin:10px 0 0;font-size:13px;color:var(--ink-3)">Catalogue còn được mở từ nút "Download catalogue" ở trang chủ và các nút trong trang.</p></div>
+      <li value="16">Thank-you <small>(tự hiện sau khi gửi form)</small></li>
+    </ol><p style="margin:10px 0 0;font-size:13px;color:var(--ink-3)">Catalogue còn được mở từ nút "Download catalogue" ở trang chủ và các nút trong trang. Nút nổi Zalo / Email / WhatsApp có trên mọi trang.</p></div>
   </div>
 </div>
 </body>
